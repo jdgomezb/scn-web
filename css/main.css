@@ -629,25 +629,40 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 
 @media screen and (max-width:1050px), screen and (max-device-width:1050px) {
-body .header {
-  background-attachment: scroll;
-}
+  body .header {
+    background-attachment: scroll;
+  }
 }
 
 /*ipad portrait*/
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait) {
-.header {
-  background-attachment: scroll;
-}
+  .header {
+    background-attachment: scroll;
+  }
 }
 
 @media screen and (max-width:769px) {
-#headerwrap h1 {
-  font-size: 40px;
+  #headerwrap h1 {
+    font-size: 40px;
+  }
+  #headerwrap p {
+    font-size: 20px;
+  }
 }
-#headerwrap p {
-  font-size: 20px;
-}
+
+@media screen and (max-width: 540px) {
+
+  #footerwrap .copyright {
+    font-size: 12px;
+  }
+  #footerwrap .copyright span {
+    display: block;
+    font-size: 16px;
+  }
+  #footerwrap .copyright span:after {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -670,16 +685,5 @@ body .header {
   #headerwrap h1 {
     font-size: 36px;
     width: 300px;
-  }
-
-  #footerwrap .copyright {
-    font-size: 12px;
-  }
-  #footerwrap .copyright span {
-    display: block;
-    font-size: 16px;
-  }
-  #footerwrap .copyright span:after {
-    display: none;
   }
 }
