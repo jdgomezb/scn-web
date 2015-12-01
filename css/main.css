@@ -359,6 +359,16 @@ a:before, a:after {
   font-weight: 700;
   margin-top: 30px;
 }
+.logos-wrapper {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+.logos-wrapper img {
+  display: inline-block;
+  margin: 0 10px;
+  max-width: 100px;
+}
 #team {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   padding: 60px 0;
@@ -652,20 +662,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 @media screen and (max-width: 540px) {
 
-  #footerwrap .copyright {
-    font-size: 12px;
-  }
-  #footerwrap .copyright span {
-    display: block;
-    font-size: 16px;
-  }
-  #footerwrap .copyright span:after {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 375px) {
   .navbar-default {
     padding: 10px 0;
   }
@@ -677,13 +673,44 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
     font-size: 12px;
     padding: 0;
   }
+  hr {
+    margin: 1.5em 0 !important;
+  }
+  
   #headerwrap {
     margin-top: 80px;
-    min-height: 350px;
+    min-height: 300px;
     padding-top: 80px;
   }
   #headerwrap h1 {
     font-size: 36px;
     width: 300px;
   }
+  #footerwrap .copyright {
+    font-size: 12px;
+  }
+  #footerwrap .copyright span {
+    display: block;
+    font-size: 16px;
+  }
+  #footerwrap .copyright span:after {
+    display: none;
+  }
+  
+  #about {
+    padding-top: 40px;
+  }
+  #services h2 {
+    margin: 0;
+  }
+  .logos-wrapper {
+    margin-bottom: 30px;
+  }
+  .logos-wrapper img {
+    margin: 0 5px;
+    max-width: 65px;
+  }
+}
+
+@media screen and (max-width: 375px) {
 }
